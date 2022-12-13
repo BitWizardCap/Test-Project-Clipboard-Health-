@@ -16,3 +16,9 @@ Based on the information given, break this ticket down into 2-5 individual ticke
 You will be graded on the level of detail in each ticket, the clarity of the execution plan within and between tickets, and the intelligibility of your language. You don't need to be a native English speaker, but please proof-read your work.
 
 ## Your Breakdown Here
+- Data is saved in the database in the Facilities, Agents, and Shifts tables
+- A function `getShiftsByFacility` is called with the Facility's id.
+- And if the backend received the request with Facility's id, then have to get all data with Facility's id by joining Facilities table, Agents table, and Shifts table and return the result.
+- And `getShiftsByFacility` returns all Shifts worked that quarter, including metadaa about the Agent assiend to each according to response.
+- And call `generateRopart` with the lsit of Shifts.
+- A function `generateReport` is then called with the list of Shifts. It converts them into a PDF which can be submitted by the Facility for compliance.
